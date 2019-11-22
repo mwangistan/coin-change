@@ -1,7 +1,7 @@
 def num_coins(cents):
     '''Return the number of coins
     '''
-    if cents < 1:
+    if cents == 0:
         return 0
     coins = [25, 10, 5, 1]
     num_coins = 0
