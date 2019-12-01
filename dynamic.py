@@ -8,7 +8,5 @@ def min_coins(coins, amount):
         for c in coins:
             if i >= c:
                 rs[i] = min(rs[i], rs[i-c] + 1)
-
-    if rs[amount] == amount+1:
-        return -1
+                
     return rs[amount]
